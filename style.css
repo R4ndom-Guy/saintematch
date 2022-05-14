@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.facemash {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  border-radius: 7px;
+  width: 99%;
+  text-align: center;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  color: #fff;
+  background: rgb(46, 67, 255);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.para {
+  position: absolute;
+  top: 115px;
+  left: 5px;
+  border-radius: 7px;
+  width: 99%;
+  text-align: center;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  z-index: 1;
+}
+
+.image {
+  width: 350px;
+  height: 450px;
+  z-index: 1;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.5);
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  margin: 0px 45px;
+  border-radius: 3px;
+}
+
+#btn1 {
+  background: #fff;
+  border: none;
+  border-radius: 15px;
+  font-size: 38px;
+  color: grey;
+}
+
+#btn1:hover {
+  cursor: pointer;
+}
+
+#btn2 {
+  background: #fff;
+  border: none;
+  border-radius: 15px;
+  font-size: 38px;
+  color: grey;
+}
+
+#btn2:hover {
+  cursor: pointer;
+}
+
+small {
+  position: absolute;
+  font-size: 30px;
+}
+
+.small {
+  position: relative;
+  font-size: 40px;
+  color: red;
+}
+
+.insta {
+  position: absolute;
+  bottom: 30px;
+  right: 30%;
+  width: 40%;
+  height: 50px;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+  font-weight: 900;
+  font-size: 20px;
+  border: none;
+  background: rgb(46, 67, 255);
+  color: white;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  font-family: "Arial", sans-serif;
+  backdrop-filter: blur(10px);
+}
+
+@media screen and (max-width: 500px) {
+  .para {
+    top: 105%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .para {
+    top: 105%;
+  }
+}

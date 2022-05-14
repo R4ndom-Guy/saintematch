@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!--Create the head of the page-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <!--Font Awesome link-->
+        <script src="https://kit.fontawesome.com/9a200735e4.js" crossorigin="anonymous"></script>
+        <title>Sainte Match</title>
+    </head>
+    <body>
+        <!--Create the header of the page-->
+        <div class="facemash">SAINTE MATCH</div>
+        <div class="para">On reprend un concept chaud, dites nous si vous voulez une autre version ! Cliquez sur la personne que vous préférez (on a pris la crème de la crème).</div>
+        <!--Create the container-->
+        <div class="container">
+            <!--Image1-->
+            <div class="img1">
+                <div class="image1 image" id="image">
+                    <img src="assets/photo1.PNG" id="image1" onclick="nextProfile()"></img>
+                </div>
+            </div>
+            <!--Image2-->
+            <div class="img2">
+                <div class="image2 image" id="image">
+                    <img src="assets/photo2.PNG" id="image2" onclick="nextProfile()"></img>
+                </div>
+            </div>
+            <small>V<small class="small">/</small>S</small>
+            <a href="https://instagram.com/crushsainte_2.0"><button class="insta">Notre Insta</button></a>
+        </div>
+    </body>
+    <script>
+        // import the images by creating a variable
+        const images = [
+            "assets/photo1.PNG",
+            "assets/photo2.PNG",
+            "assets/photo3.PNG",
+            "assets/photo4.PNG",
+            "assets/photo5.PNG",
+            "assets/photo6.PNG",
+            "assets/photo7.PNG",
+            "assets/photo8.PNG",
+            "assets/photo9.PNG",
+            "assets/photo10.PNG",
+            "assets/photo11.PNG",
+            "assets/photo12.PNG",
+            "assets/photo13.PNG",
+            "assets/photo14.PNG",
+            "assets/photo15.PNG",
+            "assets/photo16.PNG",
+            "assets/photo17.png",
+            "assets/photo18.png",
+            "assets/photo19.png",
+            "assets/photo20.png",
+            "assets/photo21.png",
+            "assets/photo22.png",
+            "assets/photo23.png",
+            "assets/photo24.png",
+            "assets/photo25.png",
+            "assets/photo26.png",
+            "assets/photo27.png",
+            "assets/PHOTO28.png",
+            "assets/photo29.png",
+            "assets/photo30.png",
+            "assets/photo31.png",
+            "assets/photo32.png",
+            "assets/photo33.png",
+            "assets/photo34.png",
+            "assets/photo35.png",
+            "assets/photo36.png",
+            "assets/photo37.png",
+            "assets/photo38.png",
+            "assets/photo39.png",
+            "assets/photo40.png",
+            "assets/photo41.png"
+        ];
+
+
+        // creating function
+
+        const nextProfile = () => {
+            const randomNum1 = Math.floor(Math. random() * 41);
+            const randomImgSrc1 = images[randomNum1];
+
+            document.getElementById("image1").setAttribute("src", randomImgSrc1);
+
+            const randomNum2 = Math.floor(Math. random() * 41);
+            const randomImgSrc2 = images[randomNum2];
+
+            document.getElementById("image2").setAttribute("src", randomImgSrc2);
+        };
+
+        nextProfile();
+
+        const img = document.querySelector("img");
+
+        img.addEventListener("click", nextProfile);
+    </script>
+</html>
